@@ -1,3 +1,6 @@
 module.exports = function getZerosCount(number) {
-  // your implementation
+	if (number>=5){
+		return(parseInt(number/5)+getZerosCount(parseInt(number/5)));
+}
+	else return(0);
 }
